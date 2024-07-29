@@ -1,5 +1,7 @@
 name: pipeline
-on: [push]
+  push:
+    branches:
+      - node
 jobs:
   hello-world:
     runs-on: ubuntu-latest
