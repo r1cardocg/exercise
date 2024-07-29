@@ -1,4 +1,5 @@
 name: pipeline
+on:
   push:
     branches:
       - node
@@ -11,4 +12,4 @@ jobs:
           node-version: 18
 
       - name: hello world 
-        run: node index.js
+        run: node codes/index.js
